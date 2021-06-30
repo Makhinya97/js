@@ -11,25 +11,28 @@
 <body>
     <script>
         "use strict";
-        // ЗАДАНИЕ №4
 
-        function addition(a, b) {
-            return a + b
-        }
+        const products = [
+            {
+                id: 3,
+                price: 200,
+            },
+            {
+                id: 4,
+                price: 900,
+            },
+            {
+                id: 1,
+                price: 1000,
+            },
+        ];
 
-        function subtraction(a, b) {
-            return a - b
-        }
+        products.forEach(NewPrise => {
+            NewPrise.price = NewPrise.price - NewPrise.price * 0.15;
+        });
+   
+        console.log(products);
 
-        function division(a, b) {
-            return a / b
-        }
-
-        function multiplication(a, b) {
-            return a * b
-        }
-        
-        
     </script>
 </body>
 
